@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.twc.AD_TestSuite.Smoke_Test">
+        <methods>
+          <include name="getBuildVersion"/>
+          <include name="movefiles"/>
+          <include name="AD_C333180_Verify_Ad_On_DailyExtended_page"/>
+          <include name="App_Kill_ReLaunch"/>
+          <include name="Capabilities_Launch"/>
+        </methods>
+      </class> <!-- com.twc.AD_TestSuite.Smoke_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

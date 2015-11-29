@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[STEP1]]>
+    </line>
+    <line>
+      <![CDATA[STEP2]]>
+    </line>
+    <line>
+      <![CDATA[STEP3]]>
+    </line>
+    <line>
+      <![CDATA[STEP4]]>
+    </line>
+    <line>
+      <![CDATA[STEP5]]>
+    </line>
+    <line>
+      <![CDATA[STEP6]]>
+    </line>
+    <line>
+      <![CDATA[STEP7]]>
+    </line>
+    <line>
+      <![CDATA[STEP8]]>
+    </line>
+    <line>
+      <![CDATA[STEP9]]>
+    </line>
+    <line>
+      <![CDATA[STEP10]]>
+    </line>
+    <line>
+      <![CDATA[STEP11]]>
+    </line>
+    <line>
+      <![CDATA[STEP12]]>
+    </line>
+    <line>
+      <![CDATA[STEP13]]>
+    </line>
+    <line>
+      <![CDATA[STEP14]]>
+    </line>
+    <line>
+      <![CDATA[STEP15]]>
+    </line>
+    <line>
+      <![CDATA[STEP16]]>
+    </line>
+    <line>
+      <![CDATA[STEP17]]>
+    </line>
+    <line>
+      <![CDATA[STEP18]]>
+    </line>
+    <line>
+      <![CDATA[STEP19]]>
+    </line>
+    <line>
+      <![CDATA[STEP20]]>
+    </line>
+    <line>
+      <![CDATA[STEP21]]>
+    </line>
+    <line>
+      <![CDATA[STEP22]]>
+    </line>
+    <line>
+      <![CDATA[STEP23]]>
+    </line>
+    <line>
+      <![CDATA[STEP24]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
+    <line>
+      <![CDATA[STEP26]]>
+    </line>
+    <line>
+      <![CDATA[STEP27]]>
+    </line>
+    <line>
+      <![CDATA[STEP28]]>
+    </line>
+    <line>
+      <![CDATA[STEP29]]>
+    </line>
+    <line>
+      <![CDATA[STEP30]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[STEP32]]>
+    </line>
+    <line>
+      <![CDATA[STEP33]]>
+    </line>
+    <line>
+      <![CDATA[STEP34]]>
+    </line>
+    <line>
+      <![CDATA[STEP35]]>
+    </line>
+    <line>
+      <![CDATA[STEP36]]>
+    </line>
+    <line>
+      <![CDATA[STEP37]]>
+    </line>
+    <line>
+      <![CDATA[STEP38]]>
+    </line>
+    <line>
+      <![CDATA[STEP39]]>
+    </line>
+    <line>
+      <![CDATA[STEP40]]>
+    </line>
+    <line>
+      <![CDATA[STEP41]]>
+    </line>
+    <line>
+      <![CDATA[STEP42]]>
+    </line>
+    <line>
+      <![CDATA[STEP43]]>
+    </line>
+    <line>
+      <![CDATA[STEP44]]>
+    </line>
+    <line>
+      <![CDATA[STEP45]]>
+    </line>
+    <line>
+      <![CDATA[STEP46]]>
+    </line>
+    <line>
+      <![CDATA[STEP47]]>
+    </line>
+    <line>
+      <![CDATA[STEP48]]>
+    </line>
+    <line>
+      <![CDATA[STEP49]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="844056" started-at="2015-11-29T06:21:18Z" finished-at="2015-11-29T06:35:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="844056" started-at="2015-11-29T06:21:18Z" finished-at="2015-11-29T06:35:23Z">
+      <class name="com.twc.AD_TestSuite.Smoke_Test">
+        <test-method status="PASS" signature="Capabilities_Launch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="Capabilities_Launch" is-config="true" duration-ms="98263" started-at="2015-11-29T11:51:18Z" finished-at="2015-11-29T11:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities_Launch -->
+        <test-method status="PASS" signature="getBuildVersion()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="getBuildVersion" is-config="true" duration-ms="6" started-at="2015-11-29T11:52:57Z" finished-at="2015-11-29T11:52:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getBuildVersion -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="1" started-at="2015-11-29T11:52:57Z" finished-at="2015-11-29T11:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333179_Verify_AdCall_On_PulltoRefresh()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333179_Verify_AdCall_On_PulltoRefresh" duration-ms="11863" started-at="2015-11-29T11:52:57Z" finished-at="2015-11-29T11:53:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP2]]>
+            </line>
+            <line>
+              <![CDATA[STEP3]]>
+            </line>
+            <line>
+              <![CDATA[STEP4]]>
+            </line>
+            <line>
+              <![CDATA[STEP5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333179_Verify_AdCall_On_PulltoRefresh -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="0" started-at="2015-11-29T11:53:09Z" finished-at="2015-11-29T11:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333174_FactualCall_On_FreshLaunch_RE()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333174_FactualCall_On_FreshLaunch_RE" duration-ms="19107" started-at="2015-11-29T11:53:09Z" finished-at="2015-11-29T11:53:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP6]]>
+            </line>
+            <line>
+              <![CDATA[STEP7]]>
+            </line>
+            <line>
+              <![CDATA[STEP8]]>
+            </line>
+            <line>
+              <![CDATA[STEP9]]>
+            </line>
+            <line>
+              <![CDATA[STEP10]]>
+            </line>
+            <line>
+              <![CDATA[STEP11]]>
+            </line>
+            <line>
+              <![CDATA[STEP12]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333174_FactualCall_On_FreshLaunch_RE -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="1" started-at="2015-11-29T11:53:28Z" finished-at="2015-11-29T11:53:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333173_Verify_WeatherFX_ApiCall_On_FreshLaunch_RE()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333173_Verify_WeatherFX_ApiCall_On_FreshLaunch_RE" duration-ms="73339" started-at="2015-11-29T11:53:28Z" finished-at="2015-11-29T11:54:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP13]]>
+            </line>
+            <line>
+              <![CDATA[STEP14]]>
+            </line>
+            <line>
+              <![CDATA[STEP15]]>
+            </line>
+            <line>
+              <![CDATA[STEP16]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333173_Verify_WeatherFX_ApiCall_On_FreshLaunch_RE -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="1" started-at="2015-11-29T11:54:41Z" finished-at="2015-11-29T11:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333182_LotameAdTargeting_On_AppLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333182_LotameAdTargeting_On_AppLaunch" duration-ms="87111" started-at="2015-11-29T11:54:41Z" finished-at="2015-11-29T11:56:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP17]]>
+            </line>
+            <line>
+              <![CDATA[STEP18]]>
+            </line>
+            <line>
+              <![CDATA[STEP19]]>
+            </line>
+            <line>
+              <![CDATA[STEP20]]>
+            </line>
+            <line>
+              <![CDATA[STEP21]]>
+            </line>
+            <line>
+              <![CDATA[STEP22]]>
+            </line>
+            <line>
+              <![CDATA[STEP23]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333182_LotameAdTargeting_On_AppLaunch -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="0" started-at="2015-11-29T11:56:08Z" finished-at="2015-11-29T11:56:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333175_Verify_Ad_Present_On_HourlyExtended_page()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333175_Verify_Ad_Present_On_HourlyExtended_page" duration-ms="11710" started-at="2015-11-29T11:56:08Z" finished-at="2015-11-29T11:56:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+            <line>
+              <![CDATA[STEP26]]>
+            </line>
+            <line>
+              <![CDATA[STEP27]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333175_Verify_Ad_Present_On_HourlyExtended_page -->
+        <test-method status="PASS" signature="AD_C333180_Verify_Ad_Present_On_DailyExtended_page()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333180_Verify_Ad_Present_On_DailyExtended_page" duration-ms="211776" started-at="2015-11-29T11:56:20Z" finished-at="2015-11-29T11:59:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP28]]>
+            </line>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+            <line>
+              <![CDATA[STEP30]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333180_Verify_Ad_Present_On_DailyExtended_page -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="0" started-at="2015-11-29T11:56:20Z" finished-at="2015-11-29T11:56:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="1" started-at="2015-11-29T11:59:52Z" finished-at="2015-11-29T11:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333176_Verify_Ad_Present_On_MapsExtended_page()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333176_Verify_Ad_Present_On_MapsExtended_page" duration-ms="69758" started-at="2015-11-29T11:59:52Z" finished-at="2015-11-29T12:01:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP32]]>
+            </line>
+            <line>
+              <![CDATA[STEP33]]>
+            </line>
+            <line>
+              <![CDATA[STEP34]]>
+            </line>
+            <line>
+              <![CDATA[STEP35]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333176_Verify_Ad_Present_On_MapsExtended_page -->
+        <test-method status="PASS" signature="AD_C333177_Verify_Ad_Present_On_NewsExtended_page()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333177_Verify_Ad_Present_On_NewsExtended_page" duration-ms="140683" started-at="2015-11-29T12:01:01Z" finished-at="2015-11-29T12:03:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP36]]>
+            </line>
+            <line>
+              <![CDATA[STEP37]]>
+            </line>
+            <line>
+              <![CDATA[STEP38]]>
+            </line>
+            <line>
+              <![CDATA[STEP39]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333177_Verify_Ad_Present_On_NewsExtended_page -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="0" started-at="2015-11-29T12:01:01Z" finished-at="2015-11-29T12:01:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="App_Kill_ReLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="App_Kill_ReLaunch" is-config="true" duration-ms="0" started-at="2015-11-29T12:03:22Z" finished-at="2015-11-29T12:03:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Kill_ReLaunch -->
+        <test-method status="PASS" signature="AD_C333172_Verify_AdCalls_On_CleanLaunch()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="AD_C333172_Verify_AdCalls_On_CleanLaunch" duration-ms="120392" started-at="2015-11-29T12:03:22Z" finished-at="2015-11-29T12:05:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP40]]>
+            </line>
+            <line>
+              <![CDATA[STEP41]]>
+            </line>
+            <line>
+              <![CDATA[STEP42]]>
+            </line>
+            <line>
+              <![CDATA[STEP43]]>
+            </line>
+            <line>
+              <![CDATA[STEP44]]>
+            </line>
+            <line>
+              <![CDATA[STEP45]]>
+            </line>
+            <line>
+              <![CDATA[STEP46]]>
+            </line>
+            <line>
+              <![CDATA[STEP47]]>
+            </line>
+            <line>
+              <![CDATA[STEP48]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AD_C333172_Verify_AdCalls_On_CleanLaunch -->
+        <test-method status="PASS" signature="movefiles()[pri:0, instance:com.twc.AD_TestSuite.Smoke_Test@2acf57e3]" name="movefiles" is-config="true" duration-ms="40" started-at="2015-11-29T12:05:23Z" finished-at="2015-11-29T12:05:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP49]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- movefiles -->
+      </class> <!-- com.twc.AD_TestSuite.Smoke_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

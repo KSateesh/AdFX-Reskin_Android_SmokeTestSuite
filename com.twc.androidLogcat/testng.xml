@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TWC_Android_SmokeTest_Suite" parallel="none">
+	<test name="Android_SmokeTest">
+		<classes>
+			<class name="com.twc.AD_TestSuite.Smoke_Test">
+				<methods>
+					<include name="AD_C333179_Verify_AdCall_On_PulltoRefresh" />
+					<include name="AD_C333174_FactualCall_On_FreshLaunch" />
+					<include name="AD_C333173_Verify_WeatherFX_ApiCall_On_FreshLaunch_RE" />
+					<include name="AD_C333182_LotameAdTargeting_On_AppLaunch" />
+					<include name="AD_C333175_Verify_Ad_Present_On_HourlyExtended_page" />
+					<include name="AD_C333180_Verify_Ad_Present_On_DailyExtended_page" />
+					<include name="AD_C333176_Verify_Ad_Present_On_MapsExtended_page" />
+					<include name="AD_C333177_Verify_Ad_Present_On_NewsExtended_page" />
+					<include name="AD_C333172_Verify_AdCalls_On_CleanLaunch" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Android_SmokeTest -->
+</suite> <!-- TWC_Android_SmokeTest_Suite -->
