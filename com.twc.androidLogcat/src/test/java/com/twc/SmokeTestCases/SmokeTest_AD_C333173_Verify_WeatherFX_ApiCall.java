@@ -157,18 +157,32 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 					 Thread.sleep(1000);
 					 
 						System.out.println("================================");
-						
-						try{
-						// Capturing the WFXTG Call Data
-						if (sb.toString().contains("response from server is {" + '"' + "wfxtg")) {
-							String wfxValues = null;
-							if (sb.toString().contains("response from server is {" + "\"wfxtg\"")) {
-								wfxValues = sb.toString().substring(sb.toString().lastIndexOf("response from server is {" + '"'+ "wfxtg"));
-								wfxValues = wfxValues.substring(
-										wfxValues.indexOf("scatterSegs" + '"' + ":") + 13,
-										wfxValues.indexOf("]}}") + 1);
-								System.out.println("Verifing the WFX call " + wfxValues);
-							}
+
+			try {
+				// Capturing the WFXTG Call Data
+				String wfxValues = null;
+				int test = 0;
+				for (int i = 1; i <= 6; i++) {
+					int index = sb.toString().indexOf("response from server is {" + "\"wfxtg\"" + ":{"+ "\"current\"" + ":[", test);
+					int emptyindex = sb.toString().indexOf("response from server is {" + "\"wfxtg\"" + ":{"+ "\"current\"" + ":[]", test);
+					if (index == -1) {
+						break;
+					} else if (index != emptyindex) {
+						wfxValues = sb.toString().substring(index);
+						wfxValues = wfxValues.substring(wfxValues.indexOf("scatterSegs" + '"'+ ":") + 13,wfxValues.indexOf("]}}") + 1);
+						System.out.println("Verifing the WFX call"+ wfxValues);
+					}
+					test = index + 2;
+				}
+//						if (sb.toString().contains("response from server is {" + '"' + "wfxtg")) {
+//							String wfxValues = null;
+//							if (sb.toString().contains("response from server is {" + "\"wfxtg\"")) {
+//								wfxValues = sb.toString().substring(sb.toString().lastIndexOf("response from server is {" + '"'+ "wfxtg"));
+//								wfxValues = wfxValues.substring(
+//										wfxValues.indexOf("scatterSegs" + '"' + ":") + 13,
+//										wfxValues.indexOf("]}}") + 1);
+//								System.out.println("Verifing the WFX call " + wfxValues);
+//							}
 							System.out.println("================================");
 							
 							Thread.sleep(1000);
@@ -313,7 +327,7 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 							}
 							
 							System.out.println("================================");
-						}
+//						}
 					
 						br.close();
 						}catch(Exception e){
