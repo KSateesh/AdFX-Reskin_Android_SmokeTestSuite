@@ -105,7 +105,6 @@ public class Smoke_Test extends Driver{
 		
 		SmokeTest_AD_C333175_Hourly hourlyExtend = new SmokeTest_AD_C333175_Hourly();
 		hourlyExtend.verify_adpresent_onextendedHourly_page();
-
 	}
 	
 	//10 Day Ad [Daily Ad]
@@ -162,7 +161,10 @@ public class Smoke_Test extends Driver{
 //			FactualTest.Factual_Test();
 //
 //		}
+//
 
+	
+	
 
 	@BeforeTest
 	public void Capabilities_Launch() throws Exception {
@@ -187,14 +189,15 @@ public class Smoke_Test extends Driver{
 	@BeforeClass
 	public void getBuildVersion() throws Exception {
 
-		// Calling the method to know build version of the app class
-//		toKnowBuildVersion getBuildVersion = new toKnowBuildVersion();
-//		getBuildVersion.moreOptionsClick();
+		// Calling the method to know APP Build Version
+		toKnowBuildVersion getBuildVersion = new toKnowBuildVersion();
+		getBuildVersion.moreOptionsClick();
 
-		// Calling the method to know build version of the app class
-//	   setAddress_Location sa = new setAddress_Location();
+		// Calling the method to Set Address/Location in the APP
+	   //setAddress_Location sa = new setAddress_Location();
 //	  sa.setLocation();
-		
+	
+	// To print the Device Name and Build Version in Reports
 		String	AndroidVersion = properties.getProperty("platformVersion");
 
 		String deviceName = properties.getProperty("deviceName");
@@ -204,8 +207,8 @@ public class Smoke_Test extends Driver{
 		Driver.property();
 		
 		PropertyFile.property();
-
-		ATUReports.indexPageDescription = "<h1> Android Smoke Test Report </h1> <br/> <h2> On "+ deviceName.toString() +" and version- " +AndroidVersion.toString()+" </h2> <br/> <h2>with build : "+buildVersion+"</h2>";
+		
+		ATUReports.indexPageDescription = "<h1> Android Smoke Test Report </h1> <br/> <h2> on Build "+ buildVersion + "</h2> <br/> <h2>"+"Executed on " +deviceName+ " OS : ("+AndroidVersion+")"+"</h2>";
 
 		ATUReports.add("Setting IndexPageDescription : ",false);
 
@@ -224,6 +227,7 @@ public class Smoke_Test extends Driver{
 //		app_Kill_Relaunch.Kill_realaunch();
 
 	}
+
 	
 	@SuppressWarnings({ "deprecation", "static-access" })
 	@AfterSuite
