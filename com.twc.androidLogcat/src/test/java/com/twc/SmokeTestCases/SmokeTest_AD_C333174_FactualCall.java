@@ -38,7 +38,7 @@ public class SmokeTest_AD_C333174_FactualCall extends Driver {
 	    Driver.property();
 		PropertyFile.property();
 
-		System.out.println("Verification of Factual Cal Test_Case Started");
+		System.out.println("Verification of Factual Call Test_Case Started");
 		
 		String adbPath = properties.getProperty("adbPath");
 		String[] str ={"/bin/bash", "-c", adbPath+" shell setprop log.tag.TwcAd DEBUG"};
@@ -65,9 +65,7 @@ public class SmokeTest_AD_C333174_FactualCall extends Driver {
 		Swipe.swipe();
 		Swipe.swipe();
 		}catch(Exception e){
-			
-//			System.out.println("Exception message :: "+e);
-			
+			//System.out.println("Exception message :: "+e);			
 		}
 		
 		Thread.sleep(2000);
@@ -181,31 +179,32 @@ public class SmokeTest_AD_C333174_FactualCall extends Driver {
 				}		
 			}
 			
-			ATUReports.add("Verify PubAd_FAUD values", false);
+			ATUReports.add("Verify the Factual values(FAUD,FGEO) in Feed_1 Call", false);
 			String pubad_faud = pubad_faudvalues.toString();
 			System.out.println("PubAd_FAUD Values "+ pubad_faud.toString());
-			ATUReports.add("PubAd_FAUD values :: "+pubad_faud, false);
-			
-			ATUReports.add("Verify Location_Geopulse_Filter values", false);
-			String filters= filterValues.toString().replaceAll(", ", ",");
-			System.out.println("Location_Geopulse_Filter values "+ filters.toString());
-			ATUReports.add("Location_Geopulse_Filter values :: "+filters, false);
+			ATUReports.add("PubAd_FAUD values are present", false);
 			
 			ATUReports.add("Verify PubAd_FGEO values", false);
 			String pubad_fgeo = pubad_fgeovalues.toString();
 			System.out.println("PubAd_FGEO Values "+ pubad_fgeo.toString());
-			ATUReports.add("PubAd_FGEO values :: "+pubad_fgeo, false);
+			ATUReports.add("PubAd_FGEO values are present", false);
 			
+			ATUReports.add("Verify Filter values in Location_Geopulse call", false);
+			String filters= filterValues.toString().replaceAll(", ", ",");
+			System.out.println("Location_Geopulse_Filter values "+ filters.toString());
+			ATUReports.add("Location_Geopulse_Filter values are present", false);
+			
+         //Asserting the PubAd_FGEO values and Factual_call filter values
 //			Assert.assertEquals(filters, pubad_fgeo);
 //			if(filters.equalsIgnoreCase(pubad_fgeo)){
 			if(pubad_fgeo.equalsIgnoreCase(filters)){
 				
-				System.out.println("PubAd_FGEO values and Factual call filter values are matched");
-				ATUReports.add("PubAd_FGEO values and Factual call filter values are matched", false);	
+				System.out.println("PubAd_FGEO values and Factual_call filter values are matched");
+				ATUReports.add("PubAd_FGEO values and Factual_call filter values are matched", false);	
 			}else{
 				
-				System.out.println("PubAd_FGEO values and Factual call filter values are matched");
-				ATUReports.add("PubAd_FGEO values and Factual call filter values are matched", false);
+				System.out.println("PubAd_FGEO values and Factual_call filter values are NOT matched");
+				ATUReports.add("PubAd_FGEO values and Factual_call filter values are NOT matched", false);
 				}
 			
 			br.close();
@@ -213,7 +212,7 @@ public class SmokeTest_AD_C333174_FactualCall extends Driver {
 			e.printStackTrace();
 		}
 
-		System.out.println("Verifying Factual Call test case done");
+		System.out.println("Factual Call Test_Case is done");
 	}
 
 }

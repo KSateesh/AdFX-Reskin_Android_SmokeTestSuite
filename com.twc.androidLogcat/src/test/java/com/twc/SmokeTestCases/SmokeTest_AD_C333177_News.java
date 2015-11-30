@@ -47,7 +47,7 @@ public class SmokeTest_AD_C333177_News extends Driver{
 				news = Ad.findElementByName("News");
 				
 			} catch (Exception e) {
-				// System.out.println(e);	
+				// System.out.println("Exception message :: "+e);	
 			}
 
 			if(news!=null && news.isDisplayed())

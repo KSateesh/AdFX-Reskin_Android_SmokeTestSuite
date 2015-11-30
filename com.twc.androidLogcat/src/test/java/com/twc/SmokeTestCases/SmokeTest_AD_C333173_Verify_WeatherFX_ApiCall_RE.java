@@ -124,7 +124,7 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall_RE extends Driver{
 
 			}
 			List<String> wfxtg_values = new ArrayList<String>();
-			ATUReports.add("Verify PubAd_WFXTG values",false);
+			ATUReports.add("Verify the WFXTG values in Feed_1 Call",false);
 			
 			String pub_wfxtg = null;
 		    String pubad_wfxtg =null;
@@ -153,7 +153,9 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall_RE extends Driver{
 				}
                 pubad_wfxtg =pubad_wfxtgvalues.toString();
 				System.out.println("pubad_wfxtg values are :: "+ pubad_wfxtgvalues.toString());
-				ATUReports.add("PubAd_WFXTG values :: "+pubad_wfxtg,false);
+				//ATUReports.add("PubAd_WFXTG values :: "+pubad_wfxtg,false);
+				ATUReports.add("WFXTG values are present",false);
+				
 
 			}
 			br.close();

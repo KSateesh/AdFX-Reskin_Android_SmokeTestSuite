@@ -61,16 +61,16 @@ public class SmokeTest_AD_C333172_CleanLaunch extends Driver{
 		Dimension dimensions = Ad.manage().window().getSize();
 //		 System.out.println("dimensions :: "+dimensions);
 		
-//		try{
-//		//Wait for 20 sec for element presence
-//		WebDriverWait wait = new WebDriverWait(Ad, 10);
-//		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.weather.Weather:id/temperature")));
-//		}catch(Exception e){
+		try{
+		//Wait for 20 sec for element presence
+		WebDriverWait wait = new WebDriverWait(Ad, 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.weather.Weather:id/temperature")));
+		}catch(Exception e){
 			//System.out.println("Error message :: "+e);
-//			}
+		}
 		 
 		Thread.sleep(1000);
-		ATUReports.add("Scroll the app to verify ad calls(BB,feed_0,feed_1 to feed_n)",false);
+		ATUReports.add("Scroll the app till end, to verify ad calls(BB,feed_0,feed_1 to feed_n)",false);
 		System.out.println("Searching for SkiSlopes module to stop the scrolling");	
 		
 		for(int FeedValue=1;FeedValue<=12;FeedValue++)
@@ -125,7 +125,7 @@ public class SmokeTest_AD_C333172_CleanLaunch extends Driver{
 		
 						}
 						
-						ATUReports.add("Get the Feed calls data from Log File",false);
+						ATUReports.add("Verify the Feed calls data from Log File",false);
 						for(int FeedValue=0;FeedValue<=6;FeedValue++)
 							{
 						//verify Feed_0 Vlaues
@@ -156,13 +156,13 @@ public class SmokeTest_AD_C333172_CleanLaunch extends Driver{
 								if(req1.contains("slotName=weather.feed"+FeedValue))
 								{
 									System.out.println("Verified Feed_"+FeedValue+" call is present");
-									ATUReports.add("Verified Feed_"+FeedValue+" call is present",false);
+									ATUReports.add("Verify that Feed_"+FeedValue+" call is present",false);
 									
 								}
 							}
 		
 					}
-						System.out.println("Verify AdCalls_on_Clean launch Case Ended");
+						System.out.println("Verify AdCalls_on_CleanLaunch case ended");
 		
 						br.close();
 		

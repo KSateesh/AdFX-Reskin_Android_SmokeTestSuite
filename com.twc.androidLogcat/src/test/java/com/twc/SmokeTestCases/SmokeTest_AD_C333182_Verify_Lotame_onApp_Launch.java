@@ -181,14 +181,16 @@ public class SmokeTest_AD_C333182_Verify_Lotame_onApp_Launch extends Driver {
 				    			   idvalues.add(id);
 				    			}
 				    			ATUReports.add("Verify Audience values from Lotame API call",false);
-				    			System.out.println("idvalues are :: " + idvalues.toString());
+				    			System.out.println("Lotame call Audience values are :: " + idvalues.toString());
 				    			String actual = idvalues.toString().replace("[", "").replace("]", "");
 				    			ATUReports.add("Lotame API Call Audience values are :: "+actual,false);
+//				    			ATUReports.add("Audience values are present in Lotame Call",false);
 				    			
 				    			ATUReports.add("Verify PubAd_SG values from PubAd call",false);
 				    			System.out.println("pubad_sg values are :: " + pubad_sgvalues.toString());
 				    			String expected = pubad_sgvalues.toString().replace("[", "").replace("]", "");
 				    			ATUReports.add("PubAd_SG values are :: "+expected,false);
+//				    			ATUReports.add("PubAd_SG values are present ",false);
 				    			
                //Asserting the PubAd_SG values with Lotame Call id values of Audiences object of JSON Object
 					Assert.assertEquals(actual, expected);
@@ -203,6 +205,6 @@ public class SmokeTest_AD_C333182_Verify_Lotame_onApp_Launch extends Driver {
 					e.printStackTrace();
 				}
 
-				System.out.println("Verifying Lotame Call test case done");
+				System.out.println("Lotame Call test case is done");
         }
     }

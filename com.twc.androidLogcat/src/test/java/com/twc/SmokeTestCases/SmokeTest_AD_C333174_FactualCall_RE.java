@@ -157,15 +157,14 @@ public class SmokeTest_AD_C333174_FactualCall_RE extends Driver {
 				}
 			}
 
-			ATUReports.add("Verify PubAd_FAUD values", false);
+			ATUReports.add("Verify the Factual values(FAUD,FGEO) in Feed_1 Call", false);
 			String pubad_faud = pubad_faudvalues.toString();
 			System.out.println("PubAd_FAUD Values "+ pubad_faud.toString());
-			ATUReports.add("PubAd_FAUD values :: "+pubad_faud, false);
+			ATUReports.add("FAUD value is present", false);
 			
-			ATUReports.add("Verify PubAd_FGEO values", false);
 			String pubad_fgeo = pubad_fgeovalues.toString();
 			System.out.println("PubAd_FGEO Values "+ pubad_fgeo.toString());
-			ATUReports.add("PubAd_FGEO values :: "+pubad_fgeo, false);
+			ATUReports.add("FGEO value is present", false);
 			
 			br.close();
 

@@ -125,6 +125,7 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 					 String[] key;
 					 String zipcode = null;
 					 List<String> pubad_zip = new ArrayList<String>();
+					 ATUReports.add("Verify the PubAd_WFXTG values in Feed_1 Call",false);
 					
 					if (sb.toString().contains("slotName=weather.feed1")) {
 						req = sb.toString().substring(sb.toString().lastIndexOf("slotName=weather.feed1"));
@@ -238,8 +239,11 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 							System.out.println("PubAd_ZCS_values " + pubAd_zcs_values);
 							System.out.println("WFX_APICall_ZCS_values " + wfx_zcs_values);
 							
-							ATUReports.add("PubAd_ZCS_values :: "+pubAd_zcs_values,false);
-							ATUReports.add("WFX_APICall_ZCS_values :: "+wfx_zcs_values,false);
+//						//	ATUReports.add("PubAd_ZCS_values :: "+pubAd_zcs_values,false);
+//						//	ATUReports.add("WFX_APICall_ZCS_values :: "+wfx_zcs_values,false);
+							
+							ATUReports.add("ZCS_values are present in Feed-1_PubAd call",false);
+							ATUReports.add("ZCS_values are present in WFX_APICall",false);
 							
 							if(wfx_zcs_values.equalsIgnoreCase(pubAd_zcs_values)){
 								System.out.println("PubAd_ZCS_values and WFX_APICall_ZCS_values are equal");
@@ -265,9 +269,11 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 							System.out.println("PubAd_NZCS_values " + pubAd_nzcs_values);
 							System.out.println("WFX_APICall_NZCS_values " + wfx_nzcs_values);
 							
-							ATUReports.add("PubAd_NZCS_values :: "+pubAd_nzcs_values,false);
-							ATUReports.add("WFX_APICall_NZCS_values :: "+wfx_nzcs_values,false);
-							
+//						//	ATUReports.add("PubAd_NZCS_values :: "+pubAd_nzcs_values,false);
+//						//	ATUReports.add("WFX_APICall_NZCS_values :: "+wfx_nzcs_values,false);
+					
+							ATUReports.add("NZCS_values are present in Feed-1_PubAd call",false);
+							ATUReports.add("NZCS_values are present in WFX_APICall",false);
 							
 							if(wfx_nzcs_values.equalsIgnoreCase(pubAd_nzcs_values)){
 								System.out.println("PubAd_NZCS_values and WFX_APICall_NZCS_values are equal");
@@ -292,8 +298,11 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 							System.out.println("PubAd_HZCS_values " + pubAd_hzcs_values);
 							System.out.println("WFX_APICall_HZCS_values " + wfx_hzcs_values);
 							
-							ATUReports.add("PubAd_HZCS_values :: "+pubAd_hzcs_values,false);
-							ATUReports.add("WFX_APICall_HZCS_values :: "+wfx_hzcs_values,false);
+						//	ATUReports.add("PubAd_HZCS_values :: "+pubAd_hzcs_values,false);
+						//    ATUReports.add("WFX_APICall_HZCS_values :: "+wfx_hzcs_values,false);
+							
+							ATUReports.add("HZCS_values are present in Feed-1_PubAd call",false);
+							ATUReports.add("HZCS_values are present in WFX_APICall",false);
 							
 							if(wfx_hzcs_values.equalsIgnoreCase(pubAd_hzcs_values)){
 								System.out.println("PubAd_HZCS_values and WFX_APICall_HZCS_values are equal");
@@ -302,8 +311,8 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 								System.out.println("PubAd_HZCS_values and WFX_APICall_HZCS_values are NOT equal");
 								ATUReports.add("PubAd_HZCS_values and WFX_APICall_HZCS_values are NOT equal",false);
 							}
+							
 							System.out.println("================================");
-
 						}
 					
 						br.close();
