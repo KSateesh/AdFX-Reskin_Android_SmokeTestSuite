@@ -161,25 +161,7 @@ public class Smoke_Test extends Driver{
 			FactualTest.Factual_Test();
 
 		}
-//
-//	//10 Day Ad
-//	@Test(priority=6, threadPoolSize = 1,invocationCount = 1)
-//	public void AD_C333180_Verify_Ad_On_DailyExtended_page() throws Exception {
-//
-//		SmokeTest_AD_C333180_Daily tendayExtended1 = new SmokeTest_AD_C333180_Daily();
-//		tendayExtended1.verify_adpresent_onextendedTenday_page();
-//
-//	}
-//	
-//	//Hourly
-//	@Test(priority=5, threadPoolSize = 1,invocationCount = 1)
-//	public void AD_C333180_Verify_Ad_On_HourlyExtended_page() throws Exception {
-//
-//		SmokeTest_AD_C333175_HourlyScroll tendayExtended2 = new SmokeTest_AD_C333175_HourlyScroll();
-//		tendayExtended2.verify_adpresent_onextendedHourly_page();
-//
-//	}
-	
+
 	
 
 	@BeforeTest
@@ -245,14 +227,7 @@ public class Smoke_Test extends Driver{
 //		app_Kill_Relaunch.Kill_realaunch();
 
 	}
-	
-//	@AfterMethod
-//	public void test(ITestResult result) throws Exception {
-//		if (ITestResult.FAILURE == result.getStatus()) {
-//
-//			System.out.println("This test case is Failed");
-//		}
-//	}
+
 	
 	@SuppressWarnings({ "deprecation", "static-access" })
 	@AfterSuite
