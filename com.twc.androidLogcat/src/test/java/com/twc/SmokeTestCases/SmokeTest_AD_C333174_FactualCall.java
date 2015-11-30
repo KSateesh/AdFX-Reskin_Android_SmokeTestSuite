@@ -17,6 +17,7 @@ import java.util.Map.Entry;
 import atu.testng.reports.ATUReports;
 
 import com.twc.General.Swipe;
+import com.twc.General.app_Kill_Relaunch;
 import com.twc.driver.Driver;
 import com.twc.driver.PropertyFile;
 
@@ -34,6 +35,9 @@ public class SmokeTest_AD_C333174_FactualCall extends Driver {
 	@SuppressWarnings({ "unchecked", "unused", "deprecation", "resource" })
 	public void Factual_Test() throws Exception{
 
+		//app kill and relaunch the app
+				app_Kill_Relaunch.Kill_realaunch();
+				
 		//Read data from Property file if required
 	    Driver.property();
 		PropertyFile.property();

@@ -91,7 +91,7 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 			ATUReports.add("Feed-1 Ad is present", false);
 		}
 		
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		// Reading the log file for feed_1,to verify WFXTG value 
 
 				BufferedReader r = new BufferedReader(new FileReader(properties.getProperty("LogFilePath")));
@@ -170,7 +170,8 @@ public class SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall extends Driver {
 					} else if (index != emptyindex) {
 						wfxValues = sb.toString().substring(index);
 						wfxValues = wfxValues.substring(wfxValues.indexOf("scatterSegs" + '"'+ ":") + 13,wfxValues.indexOf("]}}") + 1);
-						System.out.println("Verifing the WFX call"+ wfxValues);
+				// WFXTG call of https://triggers.wfxtriggers.com
+						System.out.println("Verifing the WFXTG call"+ wfxValues);
 					}
 					test = index + 2;
 				}

@@ -145,24 +145,40 @@ public class Smoke_Test extends Driver{
 		
 //	===============
 	
-//	//Weather FX API Call-Full
-//	@Test(priority=2, threadPoolSize = 1,invocationCount = 1)
-//	public void AD_C333173_Verify_WeatherFX_ApiCall() throws Exception {
-//
-//		SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall tendayExtended = new SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall();
-//		tendayExtended.SmokeTest_WFX();
-//   }
-//	
-//	  //Factual FX API Call
-//		@Test(priority=1, threadPoolSize = 1,invocationCount = 1)
-//		public void AD_C333174_FactualCall_On_FreshLaunch() throws Exception {
-//
-//			SmokeTest_AD_C333174_FactualCall FactualTest = new SmokeTest_AD_C333174_FactualCall();
-//			FactualTest.Factual_Test();
-//
-//		}
-//
+	//Weather FX API Call-Full
+	@Test(priority=9, threadPoolSize = 1,invocationCount = 1)
+	public void AD_C333173_Verify_WeatherFX_ApiCall() throws Exception {
 
+		SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall WFXTest = new SmokeTest_AD_C333173_Verify_WeatherFX_ApiCall();
+		WFXTest.SmokeTest_WFX();
+   }
+	
+	  //Factual FX API Call
+		@Test(priority=10, threadPoolSize = 1,invocationCount = 1)
+		public void AD_C333174_FactualCall_On_FreshLaunch() throws Exception {
+
+			SmokeTest_AD_C333174_FactualCall FactualTest = new SmokeTest_AD_C333174_FactualCall();
+			FactualTest.Factual_Test();
+
+		}
+//
+//	//10 Day Ad
+//	@Test(priority=6, threadPoolSize = 1,invocationCount = 1)
+//	public void AD_C333180_Verify_Ad_On_DailyExtended_page() throws Exception {
+//
+//		SmokeTest_AD_C333180_Daily tendayExtended1 = new SmokeTest_AD_C333180_Daily();
+//		tendayExtended1.verify_adpresent_onextendedTenday_page();
+//
+//	}
+//	
+//	//Hourly
+//	@Test(priority=5, threadPoolSize = 1,invocationCount = 1)
+//	public void AD_C333180_Verify_Ad_On_HourlyExtended_page() throws Exception {
+//
+//		SmokeTest_AD_C333175_HourlyScroll tendayExtended2 = new SmokeTest_AD_C333175_HourlyScroll();
+//		tendayExtended2.verify_adpresent_onextendedHourly_page();
+//
+//	}
 	
 	
 
@@ -207,8 +223,10 @@ public class Smoke_Test extends Driver{
 		Driver.property();
 		
 		PropertyFile.property();
+
+//		ATUReports.indexPageDescription = "<h1> Android Smoke Test Report </h1> <br/> <h2> On "+ deviceName.toString() +" and version- " +AndroidVersion.toString()+" </h2> <br/> <h3>with build : "+buildVersion+"</h3>";
 		
-		ATUReports.indexPageDescription = "<h1> Android Smoke Test Report </h1> <br/> <h2> on Build "+ buildVersion + "</h2> <br/> <h2>"+"Executed on " +deviceName+ " OS : ("+AndroidVersion+")"+"</h2>";
+		ATUReports.indexPageDescription = "<h1> Android Smoke Test Report </h1> <br/> <h2> on Build "+ buildVersion + "</h2> <br/> <h2>"+"Executed on " +deviceName+ " with OS : ("+AndroidVersion+")"+"</h2>";
 
 		ATUReports.add("Setting IndexPageDescription : ",false);
 
@@ -227,7 +245,14 @@ public class Smoke_Test extends Driver{
 //		app_Kill_Relaunch.Kill_realaunch();
 
 	}
-
+	
+//	@AfterMethod
+//	public void test(ITestResult result) throws Exception {
+//		if (ITestResult.FAILURE == result.getStatus()) {
+//
+//			System.out.println("This test case is Failed");
+//		}
+//	}
 	
 	@SuppressWarnings({ "deprecation", "static-access" })
 	@AfterSuite
